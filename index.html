@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form class="createItemForm">
+      <input id="inputTitle" type="text" placeholder="Title:" />
+      <input id="inputDescription" type="text" placeholder="Description:" />
+      <button id="createCardButton" type="submit">Create Card</button>
+    </form>
+
+    <br />
+
+    <div class="toDoList">
+      <div class="listWrapper toDo">
+        <span class="header">To Do</span>
+        <ul class="todo__list list" id="toDo"></ul>
+      </div>
+      <div class="listWrapper inProgress">
+        <span class="header">In Progress</span>
+        <ul class="in-progress__list list" id="inProgress"></ul>
+      </div>
+      <div class="listWrapper done">
+        <span class="header">Done</span>
+        <ul class="done__list list" id="done"></ul>
+      </div>
+      <div class="listWrapper deleted">
+        <span class="header">Deleted</span>
+        <button class="clearAllButton">Clear all</button>
+        <ul class="deleted__list list" id="deleted"></ul>
+      </div>
+    </div>
+
+    <form class="modal">
+      <input class="inputModalTitle" />
+      <input class="inputModalDescription" />
+      <button id="editModalButton">Edit</button>
+      <button id="cancelModalButton">Cancel</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
